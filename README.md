@@ -10,3 +10,14 @@ if you're getting an Unknown option: '--buildFlag' error run: npm install -g ion
 
 Can run with: ionic cordova run ios -- --buildFlag="-UseModernBuildSystem=0"
 or: ionic serve
+
+Ran: amplify init before Step 2
+-Chose Visual Studio Code
+-javascript
+-angular
+-src
+-dist
+-npm run-script build
+-start command: ionic serve
+
+Setup new user on aWS: Yes

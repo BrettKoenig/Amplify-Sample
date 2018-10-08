@@ -1,0 +1,14 @@
+{
+    "providers": {
+        "awscloudformation": {
+            "AuthRoleName": "todoexample-20181008174226-authRole",
+            "UnauthRoleArn": "arn:aws:iam::623390719558:role/todoexample-20181008174226-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::623390719558:role/todoexample-20181008174226-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "todoexample-20181008174226-deployment",
+            "UnauthRoleName": "todoexample-20181008174226-unauthRole",
+            "StackName": "todoexample-20181008174226",
+            "StackId": "arn:aws:cloudformation:us-east-1:623390719558:stack/todoexample-20181008174226/0c899270-cb43-11e8-9441-500c286e4435"
+        }
+    }
+}

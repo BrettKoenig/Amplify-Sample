@@ -1,0 +1,11 @@
+{
+    "appName": "todoexample",
+    "roleName": "pinpointLambdaRole0d8ddfe8",
+    "cloudWatchPolicyName": "cloudWatchPolicy0d8ddfe8",
+    "pinpointPolicyName": "pinpointPolicy0d8ddfe8",
+    "authPolicyName": "pinpoint_amplify_0d8ddfe8",
+    "unauthPolicyName": "pinpoint_amplify_0d8ddfe8",
+    "authRoleName": "todoexample-20181008174226-authRole",
+    "unauthRoleName": "todoexample-20181008174226-unauthRole",
+    "IAMPrefix": "623390719558"
+}
