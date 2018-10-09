@@ -12,19 +12,27 @@
 		}
 	},
 	"auth": {
-		"cognitobcae87fd": {
+		"todoexample": {
 			"service": "Cognito",
 			"providerPlugin": "awscloudformation",
 			"providerMetadata": {
-				"s3TemplateURL": "https://s3.amazonaws.com/todoexample-20181008174226-deployment/amplify-cfn-templates/auth/cognitobcae87fd-cloudformation-template.yml",
-				"logicalId": "authcognitobcae87fd"
+				"s3TemplateURL": "https://s3.amazonaws.com/todoexample-20181008174226-deployment/amplify-cfn-templates/auth/todoexample-cloudformation-template.yml",
+				"logicalId": "authtodoexample"
 			},
-			"lastPushTimeStamp": "2018-10-08T22:17:04.050Z",
+			"lastPushTimeStamp": "2018-10-09T21:27:27.272Z",
 			"output": {
-				"IdentityPoolId": "us-east-1:6b078ca1-9f5c-4d7e-bb28-53ce36cb5013",
-				"IdentityPoolName": "todoexample_identitypool_94aa343e"
+				"GoogleWebClient": "708099778617-omm8kt0c66tn822kh80rfk1uqq1vfqn5.apps.googleusercontent.com",
+				"CreatedSNSRole": "arn:aws:iam::623390719558:role/todoexample_sns-role",
+				"AppClientSecret": "94kivb0ll23bcdssesfglb95kkeuo58t37edgu6o75uvk3cn574",
+				"UserPoolId": "us-east-1_l7d8jbbSu",
+				"AppClientIDWeb": "70i25fvc26669gcfe9bdsvh5ul",
+				"AppClientID": "161518qqijvsrv23gep9c1prjr",
+				"FacebookWebClient": "165595237706941",
+				"IdentityPoolId": "us-east-1:712f2776-2591-4534-aad2-2f9b60deb802",
+				"IdentityPoolName": "todoexample",
+				"UserPoolName": "todoexample"
 			},
-			"lastPushDirHash": "BdCL5VknyQG0oFNOsJFzXb55RfI="
+			"lastPushDirHash": "0VY5CRruaQrj5H5i0g3b1gV3TY4="
 		}
 	},
 	"analytics": {
@@ -35,7 +43,7 @@
 				"s3TemplateURL": "https://s3.amazonaws.com/todoexample-20181008174226-deployment/amplify-cfn-templates/analytics/pinpoint-cloudformation-template.json",
 				"logicalId": "analyticstodoexample"
 			},
-			"lastPushTimeStamp": "2018-10-08T22:17:04.051Z",
+			"lastPushTimeStamp": "2018-10-09T21:27:27.263Z",
 			"output": {
 				"appName": "todoexample",
 				"Region": "us-east-1",
@@ -52,7 +60,7 @@
 				"s3TemplateURL": "https://s3.amazonaws.com/todoexample-20181008174226-deployment/amplify-cfn-templates/storage/todoexample-cloudformation-template.json",
 				"logicalId": "storagetodoexample"
 			},
-			"lastPushTimeStamp": "2018-10-08T22:17:04.053Z",
+			"lastPushTimeStamp": "2018-10-09T21:27:27.269Z",
 			"output": {
 				"PartitionKeyName": "userId",
 				"Region": "us-east-1",
@@ -85,7 +93,7 @@
 				"s3TemplateURL": "https://s3.amazonaws.com/todoexample-20181008174226-deployment/amplify-cfn-templates/function/ToDoItemsFunction-cloudformation-template.json",
 				"logicalId": "functionToDoItemsFunction"
 			},
-			"lastPushTimeStamp": "2018-10-08T22:17:04.053Z",
+			"lastPushTimeStamp": "2018-10-09T21:27:27.270Z",
 			"output": {
 				"Region": "us-east-1",
 				"Arn": "arn:aws:lambda:us-east-1:623390719558:function:ToDoItemsFunction",
@@ -112,7 +120,7 @@
 				"s3TemplateURL": "https://s3.amazonaws.com/todoexample-20181008174226-deployment/amplify-cfn-templates/api/ToDoItemsCRUD-cloudformation-template.json",
 				"logicalId": "apiToDoItemsCRUD"
 			},
-			"lastPushTimeStamp": "2018-10-08T22:17:04.053Z",
+			"lastPushTimeStamp": "2018-10-09T21:27:27.270Z",
 			"output": {
 				"ApiName": "ToDoItemsCRUD",
 				"RootUrl": "https://3yg8nx5562.execute-api.us-east-1.amazonaws.com/Prod"
