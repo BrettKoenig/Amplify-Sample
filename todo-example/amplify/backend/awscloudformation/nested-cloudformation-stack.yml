@@ -116,6 +116,57 @@
 					"IAMPrefix": "623390719558"
 				}
 			}
+		},
+		"storagetodoexample": {
+			"Type": "AWS::CloudFormation::Stack",
+			"Properties": {
+				"TemplateURL": "https://s3.amazonaws.com/todoexample-20181008174226-deployment/amplify-cfn-templates/storage/todoexample-cloudformation-template.json",
+				"Parameters": {
+					"tableName": "ToDoItems",
+					"partitionKeyName": "userId",
+					"partitionKeyType": "S"
+				}
+			}
+		},
+		"functionToDoItemsFunction": {
+			"Type": "AWS::CloudFormation::Stack",
+			"Properties": {
+				"TemplateURL": "https://s3.amazonaws.com/todoexample-20181008174226-deployment/amplify-cfn-templates/function/ToDoItemsFunction-cloudformation-template.json",
+				"Parameters": {
+					"storagetodoexampleName": {
+						"Fn::GetAtt": [
+							"storagetodoexample",
+							"Outputs.Name"
+						]
+					},
+					"storagetodoexampleArn": {
+						"Fn::GetAtt": [
+							"storagetodoexample",
+							"Outputs.Arn"
+						]
+					}
+				}
+			}
+		},
+		"apiToDoItemsCRUD": {
+			"Type": "AWS::CloudFormation::Stack",
+			"Properties": {
+				"TemplateURL": "https://s3.amazonaws.com/todoexample-20181008174226-deployment/amplify-cfn-templates/api/ToDoItemsCRUD-cloudformation-template.json",
+				"Parameters": {
+					"functionToDoItemsFunctionName": {
+						"Fn::GetAtt": [
+							"functionToDoItemsFunction",
+							"Outputs.Name"
+						]
+					},
+					"functionToDoItemsFunctionArn": {
+						"Fn::GetAtt": [
+							"functionToDoItemsFunction",
+							"Outputs.Arn"
+						]
+					}
+				}
+			}
 		}
 	},
 	"Outputs": {
