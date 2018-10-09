@@ -21,3 +21,6 @@ Ran: amplify init before Step 2
 -start command: ionic serve
 
 Setup new user on aWS: Yes
+
+
+Need to also do: npm install @aws-amplify/ui
