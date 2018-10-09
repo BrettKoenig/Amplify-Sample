@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { TabsPageRoutingModule } from './tabs.router.module'; 
-import { AuthGuardService } from '../services/auth-route-guard';
+import { AuthGuardService } from '../../services/auth-route-guard';
 
 import { TabsPage } from './tabs.page';
 import { ContactPageModule } from '../contact/contact.module';

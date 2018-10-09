@@ -8,7 +8,7 @@ import { ContactPage } from '../contact/contact.page';
 import { ListPage } from '../pages/list/list.page';
 
 
-import { AuthGuardService } from '../services/auth-route-guard';
+import { AuthGuardService } from '../../services/auth-route-guard';
 
 const routes: Routes = [
   {
